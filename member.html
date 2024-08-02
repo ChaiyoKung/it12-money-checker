@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>สมาชิกปัจจุบัน</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="loading">Loading</div>
+
+    <nav>
+        <div class="container">
+            <div class="navlist">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="member.html" class="active">Member</a></li>
+                </ul>
+            </div>
+            <header>
+                <h1>IT#12 Money Checker</h1>
+            </header>
+            <div class="ConnectSheet">
+                <button id="login_button">Login</button>
+                <button id="signout_button">Sign out</button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="memberfield">
+        <div class="container">
+            <table id="member">
+                <thead>
+                    <tr>
+                        <td>รหัสนักศึกษา</td>
+                        <td>ชื่อ-สกุล</td>
+                        <td>ชื่อเล่น</td>
+                        <td>Facebook</td>
+                        <td>Line ID</td>
+                        <td>เบอร์โทรศัพท์</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <div id="updateDate"></div>
+
+    <script src="js/member.js"></script>
+    <script sync defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+</body>
+
+</html>

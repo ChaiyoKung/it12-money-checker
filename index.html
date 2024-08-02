@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IT#12 Money Checker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="loading" class="off">Loading</div>
+
+    <nav>
+        <div class="container">
+            <div class="navlist">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="member.html">Member</a></li>
+                </ul>
+            </div>
+            <header>
+                <h1>IT#12 Money Checker</h1>
+            </header>
+            <div class="ConnectSheet">
+                <button id="login_button">Login</button>
+                <button id="signout_button">Sign out</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="Help">
+        ใส่รหัสนักศึกษา หรือ ชื่อเล่น
+    </div>
+
+    <div class="Search">
+        <select id="selectList">
+            <option value="All">ทั้งหมด</option>
+            <option value="Branch">ค่ารายเดือนสาขา</option>
+            <option value="ComSportDay">ค่าข้าวคอมสปอร์ตเดย์</option>
+            <option value="TshirtCS">ค่าเสื้อภาควิชาฯ</option>
+            <option value="GradNight">ค่างานราตรีบัณฑิต</option>
+            <option value="ComSeeIt">ค่างานคอมสีอิฐ</option>
+            <option value="CSMoney">ค่ารายเดือนภาควิชาฯ</option>
+            <option value="Year1Money">ค่าชั้นปี</option>
+            <option value="ITGradNight2">ค่างานราตรีบัณฑิตสาขาปี2</option>
+        </select>
+        <input type="text" id="search_textfield" autofocus></input>
+        <button id="search_button">Search</button>
+    </div>
+
+    <div class="Content">
+        <pre id="content"></pre>
+        <div id="summary"></div>
+    </div>
+
+    <div class="Credit">
+        © ChaiyoKung
+    </div>
+
+    <script src="js/main.js"></script>
+    <script sync defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+</body>
+
+</html>
